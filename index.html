@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nolwazi Zulu Portfolio</title>
+    <link rel="stylesheet" href="Website CSS.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="home">
+        <h1>Welcome!</h1>
+		<div class="welcome-content">
+        <p>My name is Nolwazi Zulu, and I am a 23-year-old first-year application development student at the Cape Peninsula University of Technology.
+		My career in IT began when I studied Computer Applications Technology as a subject from 2017 until 2019. 
+		I have created a few websites since my IT career began. The more I learn and grow, the more skills I acquire. 
+		I have skills in HTML, Java, Python, C, and CSS. Enjoy my work below!</p>
+		<img src="Images used/Me.jpeg" alt="Nolwazi Zulu">
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>知的 /Chi-teki (RFID Card Reader)</h3>
+            <p>In response to the growing need for environmental sustainability, I developed a dual-system RFID card reader using C and Python. 
+			This innovative solution helps manage chaos within shuttles and enhances user safety.</p>
+			<img src="Images used/RFID card reader in bus.jpeg" alt="RFID card reader in bus">
+        </div>
+        <div class="project">
+            <h3>Empowerlink: Keeping Our Cities Cleaner and Greener(NGO)</h3>
+            <p>In a rapidly changing world that often neglects environmental health, pollution continues to rise. 
+			Empowerlink is an NGO dedicated to reducing pollution and keeping our streets tidy. 
+			I designed this website using HTML and CSS to promote our mission.</p>
+			<img src="Images used/Empowerlink(prt) logo.jpeg" alt="Empowerlink logo">
+		
+        </div>
+        <div class="project">
+            <h3>Venue Booking Website</h3>
+            <p>The festive season brings numerous fun events and activities, many of which require suitable venues. 
+			However, many event management businesses struggle to effectively track their available spaces. 
+			This website allows users to select their desired venue and enter their card details for booking. 
+			Users can browse venue images and view seating capacities, streamlining the event planning process. 
+			I used HTML and CSS for this website.</p>
+			<img src="Images used/Event team.jpeg" alt="Venue Booking Website">
+        </div>
+    </section>
+
+   <section id="about">
+    <h2>Who is Nolwazi Zulu?</h2>
+
+    <div class="about-section">
+	    <img src="Images used/Me in mvunulo.jpg" alt="Nolwazi Zulu" class="about-image-right">
+        <div class="about-text">
+            <p>Nolwazi Zulu is a first-year Application Development student, born on April 27, 2001.
+			An enthusiastic and charismatic individual, she is dedicated to excelling in her IT skills and aims to work for one of the largest tech companies in the world. 
+			Hailing from KwaZulu-Natal, Nolwazi discovered her passion for technology in the third grade, where she began learning basic computer skills.</p>
+        </div>
+    </div>
+
+    <div class="about-section reverse">
+        <img src="Images used/Tesla HQ.jpg" alt="Nolwazi Zulu" class="about-image-left">
+        <div class="about-text">
+            <p>With nearly 12 years of experience in computer-related tasks, she aspires to join a leading tech firm and become a pioneer in innovation.
+			Nolwazi is continuously enhancing her proficiency in CSS, C, Python, and Java. 
+			From becoming computer literate at the age of 8 to designing websites and creating RFID card readers by 23, she is determined to be recognized 
+			as one of the greatest minds in technology—perhaps even surpassing figures like Elon Musk.</p>
+        </div>
+    </div>
+</section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:nolstar27@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <input type="submit" value="Send Message">
+        </form>
+        <div class="socials">
+            <p>Find me on:</p>
+            <a href="https://www.instagram.com/its.zulusart/" target="_blank"><img src="Images used/Insta logo.jpg" alt="Instagram"></a>
+            <a href="https://x.com/theenolstar" target="_blank"><img src="Images used/X-logo.png" alt="Twitter"></a>
+            <a href="https://www.facebook.com/TheeZuluQueen" target="_blank"><img src="Images used/Facebook logo.png" alt="Facebook"></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nolwazi Zulu. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var links = document.getElementById("nav-links");
+            if (links.style.display === "block") {
+                links.style.display = "none";
+            } else {
+                links.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
